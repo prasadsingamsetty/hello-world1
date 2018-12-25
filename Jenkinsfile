@@ -1,15 +1,10 @@
-pipeline
-{
-    agent any
-    stages
-    {
-        stage("build code")
-        {
-            sh "mvn clean install package"
-        }
-        stage("code deploy to tomcat")
-        {
-            echo "code deployed"
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               mvn clean install
+            }
         }
     }
 }
