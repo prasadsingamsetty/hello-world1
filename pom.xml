@@ -27,8 +27,11 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+    <snapshotRepository>
+      <id>repository</id>
+      <url>http://ec2-18-216-61-241.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/repository/</url>
+   </snapshotRepository>
   </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
